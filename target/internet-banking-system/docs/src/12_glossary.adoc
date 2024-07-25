@@ -9,9 +9,13 @@ ifndef::imagesdir[:imagesdir: ../images]
 |===
 |Term |Definition
 
-|<Term-1>
-|<definition-1>
+|<Term-1> AWS and AWS related
+|<definition-1> amazon web services,check their glossary for other aws related acronyms
 
-|<Term-2>
-|<definition-2>
+|<Term-2> REWARD
+|<definition-2> medium of exchange that owner will pay to dog finder
+
+|<Term-2> GDPR
+|<definition-3>european set of privacy laws, check gdpr-info.eu
+
 |===

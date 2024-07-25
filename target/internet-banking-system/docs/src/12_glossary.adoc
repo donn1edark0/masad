@@ -19,6 +19,7 @@ EC2:| Elastic Compute Cloud, providing scalable compute capacity.| S3:| Simple S
 
 | GDPR
 |european set of privacy laws, check gdpr-info.eu|
-WCAG 2.1| content should be accessible to all users, including those with disabilities. This involves clear and structured content, proper use of headings, alternative text for images, and avoiding overly complex language.
+WCAG 2.1| content should be accessible to all users, including those with disabilities. This involves clear and structured content, proper use of headings, alternative text for images, and avoiding overly complex language. |
+CCAP| state statute intended to enhance privacy rights and consumer protection for residents of California, USA| 
 ===|
 

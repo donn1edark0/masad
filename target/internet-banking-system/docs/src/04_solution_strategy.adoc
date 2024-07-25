@@ -11,46 +11,47 @@ and following agile development practices with CI/CD for efficient and effective
 
 == Utility Tree
 
-Utility
-  ├── Performance
-  │   ├── Response Time
-  │   │   ├── Web Application: <2 seconds for main interactions (search, listing, etc.)>
-  │   │   └── Mobile Application: <2 seconds for main interactions (search, listing, etc.)>
-  │   └── Throughput
-  │       ├── Support concurrent users: Up to 10,000
-  │       └── API Requests: Handle up to 1,000 requests per second
-  ├── Scalability
-  │   ├── Horizontal Scalability
-  │   │   ├── Microservices: Independently scalable
-  │   │   └── Databases: Support sharding and replication
-  │   └── Geographical Scalability
-  │       ├── Multi-region deployment: Support global user base
-  │       └── Local scalability: Easily add new cities or regions
-  ├── Security
-  │   ├── Data Security
-  │   │   ├── Encryption: Data at rest and in transit
-  │   │   └── Secure authentication: Multi-factor authentication (MFA)
-  │   └── Application Security
-  │       ├── Regular security audits
-  │       └── Compliance: GDPR, CCPA
-  ├── Usability
-  │   ├── User Experience
-  │   │   ├── Intuitive interface: Easy navigation for all user types
-  │   │   └── Accessibility: WCAG 2.1 compliant
-  │   └── Responsiveness
-  │       ├── Web Application: Optimized for desktop and mobile browsers
-  │       └── Mobile Application: Smooth performance on iOS and Android
-  ├── Maintainability
-  │   ├── Modularity
-  │   │   ├── Microservices: Clear separation of concerns
-  │   │   └── Codebase: Well-documented and modular
-  │   └── Continuous Integration/Continuous Deployment (CI/CD)
-  │       ├── Automated testing: High test coverage
-  │       └── Deployment: Automated with rollback capabilities
-  └── Cost Efficiency
-      ├── Resource Optimization
-      │   ├── Auto-scaling: Adjust resources based on demand
-      │   └── Serverless: Use serverless functions where appropriate
-      └── Cost Monitoring
-          ├── Budget alerts: Set and monitor budget thresholds
-          └── Cost optimization: Regular review and optimization of cloud resources
+Utility::
+
+* Performance
+** Response Time
+*** Web Application: <2 seconds for main interactions (search, listing, etc.)>
+*** Mobile Application: <2 seconds for main interactions (search, listing, etc.)>
+** Throughput
+*** Support concurrent users: Up to 10,000
+*** API Requests: Handle up to 1,000 requests per second
+* Scalability
+** Horizontal Scalability
+*** Microservices: Independently scalable
+*** Databases: Support sharding and replication
+** Geographical Scalability
+*** Multi-region deployment: Support global user base
+*** Local scalability: Easily add new cities or regions
+* Security
+** Data Security
+*** Encryption: Data at rest and in transit
+*** Secure authentication: Multi-factor authentication (MFA)
+** Application Security
+*** Regular security audits
+*** Compliance: GDPR, CCPA
+* Usability
+** User Experience
+*** Intuitive interface: Easy navigation for all user types
+*** Accessibility: WCAG 2.1 compliant
+** Responsiveness
+*** Web Application: Optimized for desktop and mobile browsers
+*** Mobile Application: Smooth performance on iOS and Android
+* Maintainability
+** Modularity
+*** Microservices: Clear separation of concerns
+*** Codebase: Well-documented and modular
+** Continuous Integration/Continuous Deployment (CI/CD)
+*** Automated testing: High test coverage
+*** Deployment: Automated with rollback capabilities
+* Cost Efficiency
+** Resource Optimization
+*** Auto-scaling: Adjust resources based on demand
+*** Serverless: Use serverless functions where appropriate
+** Cost Monitoring
+*** Budget alerts: Set and monitor budget thresholds
+*** Cost optimization: Regular review and optimization of cloud resources

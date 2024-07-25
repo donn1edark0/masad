@@ -81,8 +81,6 @@ The cloud architecture is designed to be cost-efficient while maintaining perfor
 - **S3:** Simple Storage Service, offering object storage with high durability.
 - **DocumentDB:** Managed NoSQL database service designed for performance and availability.
 
-## Contact
-For more information or to contribute to the project, please contact the project team at [contact@example.com].
 
 ---
 

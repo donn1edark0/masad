@@ -10,53 +10,14 @@ ifndef::imagesdir[:imagesdir: ../images]
 |Term |Definition
 
 |<Term-1> AWS and AWS related
-|<definition-1> amazon web services,check their glossary for other aws related acronyms
+|<definition-1> amazon web services,check their glossary for other aws related acronyms. 
+EC2: Elastic Compute Cloud, providing scalable compute capacity.| S3: Simple Storage Service, offering object storage with high durability.
+| DocumentDB: Managed NoSQL database service designed for performance and availability.
 
 |<Term-2> REWARD
 |<definition-2> medium of exchange that owner will pay to dog finder
 
 |<Term-2> GDPR
 |<definition-3>european set of privacy laws, check gdpr-info.eu
+===|
 
-
-|<TERM-3> DIAGRAMA
-<definition-3>
-'''workspace {
-
-    model {
-        user = person "User" "A user of the Where's Fluffy application."
-
-        cloud = softwareSystem "AWS Cloud" {
-            ec2 = container "EC2 Instance" "Compute Service" "t3.micro, Linux, 1-year No Upfront"
-            documentdb = container "DocumentDB" "Database Service" "db.r4.large, 1 node, 8 hours/day"
-            s3 = container "S3 Storage" "Storage Service" "1 TB, varied requests"
-            monitoring = container "Monitoring" "Service" "Enabled for EC2"
-            backup = container "Backup Storage" "Storage Service" "200 GB for DocumentDB"
-        }
-
-        user -> cloud "Uses"
-        cloud -> ec2 "Hosts"
-        cloud -> documentdb "Hosts"
-        cloud -> s3 "Stores"
-        ec2 -> monitoring "Monitors"
-        documentdb -> backup "Backs up to"
-    }
-
-    views {
-        systemContext cloud {
-            include *
-            autolayout lr
-            title "Where's Fluffy - System Context Diagram"
-        }
-
-        container cloud {
-            include *
-            autolayout lr
-            title "Where's Fluffy - Container Diagram"
-        }
-
-        theme default
-    }
-}
-'''
-|===

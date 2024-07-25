@@ -9,3 +9,8 @@ Solution: User(searcher role) gets rewards only if he/she handsoff pet in-person
 Status: Accepted
 Consequences: Users who only spot pets wont be able to receive any rewards.
 
+
+
+
+EC2 Savings Plan: Chosen for cost efficiency
+DocumentDB Standard: Selected for workload requirements

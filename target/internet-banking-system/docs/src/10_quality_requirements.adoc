@@ -5,6 +5,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 - _See https://re-magazine.ireb.org/articles/discover-quality-requirements-with-the-mini-qaw[Mini-QAW] for a short and fun elicitation workshop for Agile teams and architects._
 
+Cost Efficiency: Achieved through pre-paid EC2 instances and optimized DocumentDB usage
 
 
 === Quality Tree

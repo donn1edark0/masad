@@ -41,6 +41,7 @@ group "API"{
 api = softwareSystem "Handles application logic and business rules."
 database = softwareSystem "Stores pet reports, user data, and other relevant information."
 notification = softwareSystem "Notification Service"
+bankApi = softwareSystem "integration with payment Gateway"
 }
 
 mainApp -> api "calls API"
@@ -52,6 +53,9 @@ generalPublic -> facebook "Views and comments on pet reports"
 petFinder -> communication "i found your pet"
 petOwner -> communication "can you call me?"
 communication -> reward "Money will be sent within 24 hrs"
+reward -> bankApi "Payment Gateway"
+mainApp -> notification "New post notification on the dashboard"
+mainApp -> database "store the data of pets"
 
 
 

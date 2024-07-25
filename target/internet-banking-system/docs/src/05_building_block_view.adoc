@@ -15,7 +15,7 @@ _**<Overview Diagram>**_
 
 The Building Block View provides a static decomposition of the "Where's Fluffy?" system into its fundamental building blocks, detailing modules, components, subsystems, tiers, operations, and their interdependencies. This view acts like the floor plan of a house, providing a clear and organized structure.
 
-image::../images/structurizr-1-SystemLandscape-001.png[]
+image::../images/image.png[]
 
 Motivation::
 

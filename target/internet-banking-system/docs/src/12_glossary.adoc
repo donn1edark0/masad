@@ -18,6 +18,7 @@ EC2:| Elastic Compute Cloud, providing scalable compute capacity.| S3:| Simple S
 | medium of exchange that owner will pay to dog finder
 
 | GDPR
-|european set of privacy laws, check gdpr-info.eu
+|european set of privacy laws, check gdpr-info.eu|
+WCAG 2.1| content should be accessible to all users, including those with disabilities. This involves clear and structured content, proper use of headings, alternative text for images, and avoiding overly complex language.
 ===|
 

@@ -10,9 +10,15 @@ See link:../decisions/Internet%20Banking%20System[Architecture Decision Records]
 |Solution: User(searcher role) gets rewards only if he/she handsoff pet in-person to the owner.|
 |Status: Accepted| 
 |Consequences: Users who only spot pets wont be able to receive any rewards.|
-===|
+|Platform decisions
 | Architecture Decisions
 - **EC2 Savings Plan:** Chosen to optimize costs without compromising performance.
 - **DocumentDB Standard:** Selected for its ability to handle the specific workload requirements efficiently.
 - **S3 Storage:** Configured to balance cost and performance for storage and access needs.
+- ** Microservices Architecture **: Chosen for scalability, flexibility, and ease of maintenance.
+- ** NoSQL Database ** Selected for its flexible schema and ability to handle varied data types efficiently.
+- ** Containerization **: Using Docker and Kubernetes for efficient deployment, scalability, and management.
+- ** Cloud Hosting **: Ensures scalability, reliability, and cost-effectiveness with services like AWS and Azure.
+- ** Responsive Design : ** Ensures accessibility and usability on both web and mobile devices.
+
 ===| 

@@ -11,22 +11,6 @@ mainApp = softwareSystem "Where's Fluffy?" {
                 description "Provides the main interface for users to interact with the service."
                 technology "HTML, CSS, JavaScript"
             }
-            # container "API" {
-            #     description "Handles application logic and business rules."
-            #     technology "Java, Spring Boot"
-            # }
-            # container "Database" {
-            #     description "Stores pet reports, user data, and other relevant information."
-            #     technology "MySQL"
-            # }
-            # container "External Service" {
-            #     description "Handles payment processing and reward management."
-            #     technology "External API"
-            # }
-            # container "Notification Service" {
-            #     description "Handles notifications for comments, posts, and updates."
-            #     technology "Java, Spring Boot"
-            # }
             user -> this "Web Application" "Interacts with"
             petOwner -> this "Web Application" "Posts missing pet reports"
             petFinder -> this "Web Application" "Posts found pet reports"
@@ -48,9 +32,6 @@ facebook = softwareSystem "Facebook Login API" {
 mainApp -> api "calls API"
 user -> mainApp "Uses"
 mainApp -> facebook "Login integration"
-# petOwner -> facebook "Posts missing pet reports"
-# petFinder -> facebook "Posts found pet reports"
-# generalPublic -> facebook "Views and comments on pet reports"
 petFinder -> communication "i found your pet"
 petOwner -> communication "can you call me?"
 communication -> reward "Money will be sent within 24 hrs"
@@ -97,3 +78,20 @@ mainApp -> database "store the data of pets"
 # person2 -> phone
 # person3 -> application.generalPost
 # person4 -> application.generalPost
+
+enduser = person "End User"
+frontend = softwareSystem "DashBoard" "Front End (Web/mobile)"
+group "backend"{
+dataStorage = softwareSystem "data storage"
+}
+group "externalApi" {
+    gpsService = softwareSystem "GPS"
+    notificationService = softwareSystem "Notification"
+    paymentService = softwareSystem "Payment"
+
+}
+enduser -> frontend
+frontend -> gpsService
+frontend -> notificationService
+frontend -> paymentService
+paymentService -> dataStorage

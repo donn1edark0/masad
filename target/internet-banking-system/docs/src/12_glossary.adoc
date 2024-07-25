@@ -20,7 +20,8 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 
 |<TERM-3> DIAGRAMA
-<definition-3>workspace {
+<definition-3>
+'''workspace {
 
     model {
         user = person "User" "A user of the Where's Fluffy application."
@@ -57,5 +58,5 @@ ifndef::imagesdir[:imagesdir: ../images]
         theme default
     }
 }
-
+'''
 |===

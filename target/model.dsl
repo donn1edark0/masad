@@ -33,23 +33,24 @@ mainApp = softwareSystem "Where's Fluffy?" {
             generalPublic -> this "mobile Application" "Views and comments on pet reports"
 
         }
-facebook = softwareSystem "Facebook Login API" {
-    description "Provides authentication services for the Where's Fluffy? application."
-}
+
 
 group "API"{
 api = softwareSystem "Handles application logic and business rules."
 database = softwareSystem "Stores pet reports, user data, and other relevant information."
 notification = softwareSystem "Notification Service"
 bankApi = softwareSystem "integration with payment Gateway"
+facebook = softwareSystem "Facebook Login API" {
+    description "Provides authentication services for the Where's Fluffy? application."
+}
 }
 
 mainApp -> api "calls API"
 user -> mainApp "Uses"
 mainApp -> facebook "Login integration"
-petOwner -> facebook "Posts missing pet reports"
-petFinder -> facebook "Posts found pet reports"
-generalPublic -> facebook "Views and comments on pet reports"
+# petOwner -> facebook "Posts missing pet reports"
+# petFinder -> facebook "Posts found pet reports"
+# generalPublic -> facebook "Views and comments on pet reports"
 petFinder -> communication "i found your pet"
 petOwner -> communication "can you call me?"
 communication -> reward "Money will be sent within 24 hrs"

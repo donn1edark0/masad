@@ -9,15 +9,15 @@ ifndef::imagesdir[:imagesdir: ../images]
 |===
 |Term |Definition
 
-|<Term-1> AWS and AWS related
-|<definition-1> amazon web services,check their glossary for other aws related acronyms. |  
+| AWS and AWS related
+| amazon web services,check their glossary for other aws related acronyms. |  
 EC2:| Elastic Compute Cloud, providing scalable compute capacity.| S3:| Simple Storage Service, offering object storage with high durability.
 | DocumentDB:| Managed NoSQL database service designed for performance and availability.
 |DocumentDB && MongoDB| are used interchangebly.
-|<Term-2> REWARD
-|<definition-2> medium of exchange that owner will pay to dog finder
+| REWARD
+| medium of exchange that owner will pay to dog finder
 
-|<Term-2> GDPR
-|<definition-3>european set of privacy laws, check gdpr-info.eu
+| GDPR
+|european set of privacy laws, check gdpr-info.eu
 ===|
 

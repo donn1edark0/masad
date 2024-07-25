@@ -3,14 +3,13 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Architecture Decisions
 
 See link:../decisions/Internet%20Banking%20System[Architecture Decision Records].
-TITLE: REWARDS ONLY FOR IN-PERSON PET HANDOFF SCENARIO
-CONTEXT: Reward(bounties) can be created by the owner of missing pet, we need to make sure that person that found the pet and owner are both satisfied. 
-Solution: User(searcher role) gets rewards only if he/she handsoff pet in-person to the owner.
-Status: Accepted
+TITLE: REWARDS ONLY FOR IN-PERSON PET HANDOFF SCENARIO 
+CONTEXT: Reward(bounties) can be created by the owner of missing pet, we need to make sure that person that found the pet and owner are both satisfied.  
+Solution: User(searcher role) gets rewards only if he/she handsoff pet in-person to the owner. 
+Status: Accepted 
 Consequences: Users who only spot pets wont be able to receive any rewards.
-
-
-
-
-EC2 Savings Plan: Chosen for cost efficiency
-DocumentDB Standard: Selected for workload requirements
+AWS EXPLANATiONS: 
+EC2 Savings Plan: Selected to optimize costs without compromising performance.
+DocumentDB Standard: Chosen for its ability to handle the specific workload requirements efficiently.
+S3 Storage: Configured to balance cost and performance for storage and access needs.
+ 

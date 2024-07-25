@@ -10,11 +10,33 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 image::embed:SystemContext[]
 
+  |                          Users                            |
+  |-----------------------------------------------------------|
+  | - Pet Owners                                              |
+  | - Pet Finders                                             |
+  | - General Users                                           |
+  | - Local Business                                          |
 
+
+  |                    Where's Fluffy?                        |
+  |-----------------------------------------------------------|
+  | - User Management                                         |
+  | - Pet Listing and Management                              |
+  | - Pet Finder Interactions                                 |
+  | - Reward Management                                       |
+  | - Location Services                                       |
+  | - Notifications and Communication                         |
 
 **<Diagram or Table>**
 
 **<optionally: Explanation of external domain interfaces>**
+
+
+  |                     External Services (APIs)              |
+  |-----------------------------------------------------------|
+  | - GPS/Location Services (e.g., Google Maps API)           |
+  | - Notification Services (e.g., Firebase Cloud Messaging)  |
+  | - Payment Services (e.g., Stripe, PayPal)                 |
 
 === Technical Context
 
@@ -24,6 +46,62 @@ image::embed:Containers[]
 
 **<Diagram or Table>**
 
+  +--------------------------------------------------------------------------------+
+  |                                 End Users                                      |
+  +------------------------------------+-------------------------------------------+
+                                       |
+                                       v
+  +------------------------------------+-------------------------------------------+
+  |                         Where's Fluffy? Frontend                               |
+  | - Web Application (React)                                                     |
+  | - Mobile Application (React Native/Flutter)                                   |
+  +------------------------------------+-------------------------------------------+
+                                       |
+                                       v
+  +------------------------------------+-------------------------------------------+
+  |                           Where's Fluffy? Backend                             |
+  | - API Gateway (Node.js/Express or Django)                                     |
+  | - Microservices                                                             |
+  |   - User Management Service                                                 |
+  |   - Pet Listing Service                                                     |
+  |   - Pet Finder Interaction Service                                          |
+  |   - Reward Management Service                                               |
+  |   - Location Service                                                        |
+  |   - Notification Service                                                    |
+  +------------------------------------+-------------------------------------------+
+                                       |
+                                       v
+  +------------------------------------+-------------------------------------------+
+  |                                  Databases                                     |
+  | - PostgreSQL                                                             |
+  | - MongoDB                                                               |
+  +------------------------------------+-------------------------------------------+
+                                       |
+                                       v
+  +------------------------------------+-------------------------------------------+
+  |                           External Services (APIs)                             |
+  | - GPS/Location Services (e.g., Google Maps API)                               |
+  | - Notification Services (e.g., Firebase Cloud Messaging)                      |
+  | - Payment Services (e.g., Stripe, PayPal)                                     |
+  +------------------------------------+-------------------------------------------+
+
+
 **<optionally: Explanation of technical interfaces>**
 
 **<Mapping Input/Output to Channels>**
+
+User Input: Users interact with the platform via web or mobile apps.
+
+Web Application: User inputs are sent to the API Gateway, which routes them to appropriate microservices.
+Mobile Application: User inputs are sent to the API Gateway, which routes them to appropriate microservices.
+System Output:
+
+Web Application: The frontend displays responses from the backend services, such as pet listings, notifications, and user profiles.
+Mobile Application: The mobile app displays responses from the backend services, such as pet listings, notifications, and user profiles.
+Notifications:
+
+Push Notifications: Sent via Firebase Cloud Messaging to notify users about new sightings, comments, and messages.
+Email Notifications: Sent via an email service (e.g., SendGrid) for important updates and alerts.
+Payments:
+
+Payment Transactions: Processed via Stripe or PayPal, with confirmations sent back to the Reward Management Service.

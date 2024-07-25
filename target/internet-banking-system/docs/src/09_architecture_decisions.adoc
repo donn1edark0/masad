@@ -11,7 +11,8 @@ See link:../decisions/Internet%20Banking%20System[Architecture Decision Records]
 |Status: Accepted| 
 |Consequences: Users who only spot pets wont be able to receive any rewards.|
 ===|
-### Architecture Decisions
+|===### Architecture Decisions
 - **EC2 Savings Plan:** Chosen to optimize costs without compromising performance.
 - **DocumentDB Standard:** Selected for its ability to handle the specific workload requirements efficiently.
-- **S3 Storage:** Configured to balance cost and performance for storage and access needs. 
+- **S3 Storage:** Configured to balance cost and performance for storage and access needs.
+===| 

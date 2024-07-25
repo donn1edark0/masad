@@ -11,40 +11,52 @@ mainApp = softwareSystem "Where's Fluffy?" {
                 description "Provides the main interface for users to interact with the service."
                 technology "HTML, CSS, JavaScript"
             }
-            container "API" {
-                description "Handles application logic and business rules."
-                technology "Java, Spring Boot"
-            }
-            container "Database" {
-                description "Stores pet reports, user data, and other relevant information."
-                technology "MySQL"
-            }
-            container "External Service" {
-                description "Handles payment processing and reward management."
-                technology "External API"
-            }
-            container "Notification Service" {
-                description "Handles notifications for comments, posts, and updates."
-                technology "Java, Spring Boot"
-            }
+            # container "API" {
+            #     description "Handles application logic and business rules."
+            #     technology "Java, Spring Boot"
+            # }
+            # container "Database" {
+            #     description "Stores pet reports, user data, and other relevant information."
+            #     technology "MySQL"
+            # }
+            # container "External Service" {
+            #     description "Handles payment processing and reward management."
+            #     technology "External API"
+            # }
+            # container "Notification Service" {
+            #     description "Handles notifications for comments, posts, and updates."
+            #     technology "Java, Spring Boot"
+            # }
             user -> this "Web Application" "Interacts with"
             petOwner -> this "Web Application" "Posts missing pet reports"
             petFinder -> this "Web Application" "Posts found pet reports"
             generalPublic -> this "mobile Application" "Views and comments on pet reports"
 
         }
+
+
+group "API"{
+api = softwareSystem "Handles application logic and business rules."
+database = softwareSystem "Stores pet reports, user data, and other relevant information."
+notification = softwareSystem "Notification Service"
+bankApi = softwareSystem "integration with payment Gateway"
 facebook = softwareSystem "Facebook Login API" {
     description "Provides authentication services for the Where's Fluffy? application."
 }
+}
 
+mainApp -> api "calls API"
 user -> mainApp "Uses"
 mainApp -> facebook "Login integration"
-petOwner -> facebook "Posts missing pet reports"
-petFinder -> facebook "Posts found pet reports"
-generalPublic -> facebook "Views and comments on pet reports"
+# petOwner -> facebook "Posts missing pet reports"
+# petFinder -> facebook "Posts found pet reports"
+# generalPublic -> facebook "Views and comments on pet reports"
 petFinder -> communication "i found your pet"
 petOwner -> communication "can you call me?"
 communication -> reward "Money will be sent within 24 hrs"
+reward -> bankApi "Payment Gateway"
+mainApp -> notification "New post notification on the dashboard"
+mainApp -> database "store the data of pets"
 
 
 

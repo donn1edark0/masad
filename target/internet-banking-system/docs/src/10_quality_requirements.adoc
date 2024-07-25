@@ -3,20 +3,11 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-quality-scenarios]]
 == Quality Requirements
 
-- _See https://re-magazine.ireb.org/articles/discover-quality-requirements-with-the-mini-qaw[Mini-QAW] for a short and fun elicitation workshop for Agile teams and architects._
 
 Cost Efficiency: Achieved through pre-paid EC2 instances and optimized DocumentDB usage
 
 
-=== Quality Tree
 
-- _See an example quality tree in the https://docs.arc42.org/examples/quality-tpu-1/#101-quality-tree[arc42 documentation]._
-
-=== Quality Scenarios
-
-- _See example quality scenarios in the
-
-https://docs.arc42.org/examples/quality-tpu-1/#102-quality-scenarios[arc42 documentation].
 Usability: Should be easy to use, intuitive design as described by APple Guidelines
 Perfmonace: Should be able to run it on 88%+ systems
 Legal: Should follow GDPR Guidelines

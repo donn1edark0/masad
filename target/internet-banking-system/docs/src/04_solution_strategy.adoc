@@ -3,5 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-solution-strategy]]
 == Solution Strategy
 
-
-
+The solution strategy for "Where's Fluffy?" involves adopting a cloud-native architecture with microservices and containerization,
+leveraging managed cloud services for scalability and reliability, ensuring portability and flexibility through IaC and a cloud-exit strategy,
+focusing on cost-effectiveness through serverless computing and auto-scaling, delivering a high-quality user experience,
+and following agile development practices with CI/CD for efficient and effective development and deployment.

@@ -4,6 +4,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 == Risks and Technical Debts
 
 - _See https://riskstorming.com/[Risk Storming] for a visual and collaborative risk identification technique_.
-CLOUD IS COStLY:
-Potential Cost Overruns: Mitigated by careful monitoring and usage analysis
+### Risks and Technical Debt
+- **Potential Cost Overruns:** Mitigated by continuous monitoring and cost analysis.
+- **Performance Issues:** Addressed through regular performance tuning and resource adjustments.
 

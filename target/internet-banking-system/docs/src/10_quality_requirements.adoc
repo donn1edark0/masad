@@ -3,12 +3,8 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-quality-scenarios]]
 == Quality Requirements
 
+### Quality Requirements
+- **Cost Efficiency:** Achieved through strategic use of pre-paid instances and optimized resource utilization.
+- **Performance:** Ensured by selecting appropriate instance types and configurations.
+- **Reliability:** Maintained through regular monitoring and backup strategies.
 
-Cost Efficiency: Achieved through pre-paid EC2 instances and optimized DocumentDB usage
-
-
-
-Usability: Should be easy to use, intuitive design as described by APple Guidelines
-Perfmonace: Should be able to run it on 88%+ systems
-Legal: Should follow GDPR Guidelines
-INFRA: NEED TO STORE A LOT OF PICTURES

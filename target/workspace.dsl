@@ -1,4 +1,4 @@
-workspace "A minimal approach to software architecture documentation" {
+workspace "Where's Fluffy?" {
     !identifiers hierarchical
     !docs internet-banking-system/docs/src
 

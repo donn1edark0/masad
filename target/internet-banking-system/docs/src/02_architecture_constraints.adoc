@@ -3,30 +3,73 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-architecture-constraints]]
 == Architecture Constraints
 
-Budget: Limited initial funding requiring cost-effective solutions.
-Technology Stack: Utilize open-source technologies to minimize costs.
-Regulatory Compliance: Must comply with data protection laws (e.g., GDPR).
-Integration: Need for seamless integration with GPS and notification services.
+Budget:: 
 
-## Cloud Native
-**Cloud-Native Solution:** Microservices Architecture: Utilize microservices to ensure the solution is modular, scalable, and easy to manage.
-**Containerization:** Use Docker to containerize the microservices.
-**Orchestration with Kubernetes:** Kubernetes will manage the deployment, scaling, and operation of the containerized applications.
+Limited initial funding requiring cost-effective solutions.
 
-## Must be Hosted in a Cloud
-**Cloud Providers:** AWS
-**Managed Services:** EC2, Document DB, S3
+Technology Stack:: 
 
-## Cloud-Exit Strategy:
+Utilize open-source technologies to minimize costs.
 
-Portability: Designed the system to be portable across different cloud providers. Using cloud-agnostic technologies, such as Kubernetes for orchestration, PostgreSQL and MongoDB for databases, and Docker for containerization.
-Infrastructure as Code (IaC): Using Terraform to manage the cloud infrastructure. This ensures that the infrastructure setup can be replicated easily on another cloud provider if needed.
-Data Backup and Migration: Implement regular data backup strategies
-Abstracted Services: Use abstraction layers for cloud services to minimize dependency on any specific cloud provider's. For instance, will use cloud-agnostic logging and monitoring tools like Grafana.
+Regulatory Compliance:: 
+
+Must comply with data protection laws (e.g., GDPR).
+
+Integration:: 
+
+Need for seamless integration with GPS and notification services.
+
+=== Cloud Native
+
+Cloud-Native Solution:: 
+
+Microservices Architecture: Utilize microservices to ensure the solution is modular, scalable, and easy to manage.
+
+Containerization:: 
+
+Use Docker to containerize the microservices.
+
+Orchestration with Kubernetes:: 
+
+Kubernetes will manage the deployment, scaling, and operation of the containerized applications.
 
 
-## Cost-Effective Solution:
+=== Must be Hosted in a Cloud
 
-Serverless Computing: Where appropriate, use serverless computing services like AWS Lambda
-Auto-Scaling: Implement auto-scaling policies 
-Monitoring and Alerts: Set up comprehensive monitoring and alerts to detect and address any unexpected cost spikes
+Cloud Providers:: 
+
+AWS
+
+Managed Services:: 
+
+EC2, Document DB, S3
+
+=== Cloud-Exit Strategy:
+
+Portability::
+
+Designed the system to be portable across different cloud providers. Using cloud-agnostic technologies, such as Kubernetes for orchestration, PostgreSQL and MongoDB for databases, and Docker for containerization.
+
+Infrastructure as Code (IaC)::
+
+Using Terraform to manage the cloud infrastructure. This ensures that the infrastructure setup can be replicated easily on another cloud provider if needed.
+
+Data Backup and Migration::
+
+Implement regular data backup strategies
+
+Abstracted Services::
+
+Use abstraction layers for cloud services to minimize dependency on any specific cloud provider's. For instance, will use cloud-agnostic logging and monitoring tools like Grafana.
+
+=== Cost-Effective Solution:
+
+Serverless Computing::
+
+Where appropriate, use serverless computing services like AWS Lambda
+
+Auto-Scaling:: 
+
+Implement auto-scaling policies 
+
+Monitoring and Alerts:: Set up comprehensive monitoring and alerts to detect and address any unexpected cost spikes
